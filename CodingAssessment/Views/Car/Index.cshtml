@@ -1,0 +1,83 @@
+﻿@model List<CodingAssessment.ViewModel.CarViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<h1>View Cars</h1>
+
+<div>
+    <hr />
+    <div class="row">
+        <table class="arrowes-table table-striped">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th> Make</th>
+                    <th> Model</th>
+                    <th> Year</th>
+                    <th> Doors</th>
+                    <th> Color</th>
+                    <th> Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var itema in Model)
+                {
+                    <tr>
+                        <td> @Html.HiddenFor(item=> @itema.Id)</td>
+                        <td> @itema.Make</td>
+                        <td> @itema.Model</td>
+                        <td> @itema.Year</td>
+                        <td> @itema.Doors</td>
+                        <td> @itema.Color</td>
+                        <td> <input id="txbNumber" name="test" type="text" value=""></td>
+                        <td> <button onclick="validate(@itema.Price)">Guess the Price!</button></td>
+                        <td> <a class="btn btn-warning" href="~/Car/Delete/@itema.Id">Delete</a></td>
+                        <td hidden> @itema.Price</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="alert alert-success" id="success-box" hidden>
+       <p> Success!! </p>
+    </div>
+</div>
+<div>
+    <a asp-action="Create">Create</a>
+</div>
+<script>
+    function validate(Price)
+    {
+        var regex = /[0-9]|\./;
+        if (regex.test($("#txbNumber").val()))
+        {
+            var orderquantity=$("#txbNumber").val();
+            if (parseInt(orderquantity) == Price)
+                {
+                togglevisible()
+                console.log('lo mostramos')
+                }
+                else
+                {
+                console.log('ocultamos')
+                toggleinvisible()
+                }
+        }
+    }
+
+    function togglevisible() {
+        var elem = document.getElementById('success-box')
+            elem.removeAttribute("hidden");
+    }
+        function toggleinvisible() {
+            var elem = document.getElementById('success-box')            
+                elem.setAttribute("hidden", "hidden");
+            }
+
+</script>
+
