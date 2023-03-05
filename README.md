@@ -25,10 +25,13 @@ in green.
 SQL SERVER EXERCISE
 ======================================
 SQL
-You have three different tables
-A Customer Table with FirstName, LastName, Age, Occupation, MartialStatus, PersonID
-An Orders Table with OrderID, PersonID, DateCreated, MethodofPurchase
-An Orders Details table with OrderID, OrderDetailID, ProductNumber, ProductID, ProductOrigin
+You have three different tables:
+
+  A Customer Table with FirstName, LastName, Age, Occupation, MartialStatus, PersonID
+
+  An Orders Table with OrderID, PersonID, DateCreated, MethodofPurchase
+  
+  An Orders Details table with OrderID, OrderDetailID, ProductNumber, ProductID, ProductOrigin
 --------------------------------------
 Please return a result of the customers who ordered product ID = 1112222333 and return
 FirstName and LastName as full name, age, orderid, datecreated, MethodOfPurchase as Purchase Method, ProductNumber and ProductOrigin
@@ -37,9 +40,14 @@ FirstName and LastName as full name, age, orderid, datecreated, MethodOfPurchase
 SOLUTION
 --------------------------------------
 SELECT DISTINCT CONCAT(FIRST_NAME,' ',LAST_NAME) 'Full Name', age, OrderID, DateCreated, MethodOfPurchase as Purchase Method, ProductNumber , ProductOrigin
-FROM Customer C
+  FROM Customer C
+  
 INNER JOIN Orders O 
+  
 ON O.PersonId = C.PersonID
+  
 INNER JOIN OrdersDetail OD
+  
 ON OD.OrderId = O.OrderID
+  
 WHERE ProductId = 1112222333
