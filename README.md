@@ -20,7 +20,7 @@ new Car { Id = 5, Make = "BMW", Model = "X6 M", Year = 2020, Doors = 5, Color = 
 Build a simple page markup with where you display the car information and allow the user to guess the price. If within 5,000 of the guess, display a great job message
 in green.
 
-#########################################################################################################################
+######################################
 
 SQL SERVER EXERCISE
 ======================================
