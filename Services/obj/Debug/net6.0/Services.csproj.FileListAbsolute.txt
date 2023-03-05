@@ -1,0 +1,15 @@
+D:\Proyectos\net.Core\HealthEquity\Services\bin\Debug\net6.0\Services.deps.json
+D:\Proyectos\net.Core\HealthEquity\Services\bin\Debug\net6.0\Services.dll
+D:\Proyectos\net.Core\HealthEquity\Services\bin\Debug\net6.0\Services.pdb
+D:\Proyectos\net.Core\HealthEquity\Services\bin\Debug\net6.0\Entities.dll
+D:\Proyectos\net.Core\HealthEquity\Services\bin\Debug\net6.0\Entities.pdb
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.dll
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\refint\Services.dll
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\Services.pdb
+D:\Proyectos\net.Core\HealthEquity\Services\obj\Debug\net6.0\ref\Services.dll

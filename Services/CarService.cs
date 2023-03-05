@@ -5,9 +5,8 @@ namespace Services
 {
     public class CarService : IEntityServiceService<Car>
     {
-        private static CarService _Instance;
         private List<Car> carList;
-        private CarService()
+        public CarService()
         {
             carList = new List<Car>
             {
@@ -18,16 +17,6 @@ namespace Services
                 new Car { Id = 5, Make = "BMW", Model = "X6 M", Year = 2020, Doors = 5, Color = "Silver", Price = 62995 },
             };
         }
-
-        public static CarService GetInstance()
-        {
-            if (_Instance == null)
-            {
-                _Instance = new CarService();
-            }
-            return _Instance;
-        }
-
         
         public void Add(Car car)
         {
@@ -39,6 +28,11 @@ namespace Services
             carList.Add(car);
         }
 
+        public bool GessPrice(int id, int price)
+        {
+          return carList.Exists(x => x.Id == id && x.Price == price);            
+        }
+
         public List<Car> GetAll()
         {
             return carList;
@@ -48,7 +42,7 @@ namespace Services
         {
             var removeCar = carList.Find(x => x.Id == carId);
 
-            if (removeCar == null)
+            if (removeCar != null)
                 carList.Remove(removeCar);
         }
 

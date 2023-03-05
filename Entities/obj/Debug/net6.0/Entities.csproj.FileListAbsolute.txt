@@ -1,0 +1,12 @@
+D:\Proyectos\net.Core\HealthEquity\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\Proyectos\net.Core\HealthEquity\Entities\bin\Debug\net6.0\Entities.dll
+D:\Proyectos\net.Core\HealthEquity\Entities\bin\Debug\net6.0\Entities.pdb
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\Entities.dll
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\refint\Entities.dll
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\Entities.pdb
+D:\Proyectos\net.Core\HealthEquity\Entities\obj\Debug\net6.0\ref\Entities.dll
